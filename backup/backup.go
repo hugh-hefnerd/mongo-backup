@@ -1,4 +1,4 @@
-package mongoBackup
+package backup
 
 import (
 	"context"

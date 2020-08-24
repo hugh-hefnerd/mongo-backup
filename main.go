@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/hugh-hefnerd/mongoBackup/mongoBackup"
-	"github.com/hugh-hefnerd/mongoBackup/providers"
+	"github.com/hugh-hefnerd/mongo-backup/backup"
+	"github.com/hugh-hefnerd/mongo-backup/providers"
 	flag "github.com/spf13/pflag"
 	"go.mongodb.org/mongo-driver/mongo"
 	"log"
@@ -18,7 +18,7 @@ var (
 	password   string
 	backupName string
 	mc         *mongo.Client
-	provider   *mongoBackup.MongoProvider
+	provider   *backup.MongoProvider
 	text       []byte
 	key        []byte
 )
@@ -35,7 +35,7 @@ func init() {
 }
 
 func main() {
-	provider = mongoBackup.NewMongoClient(host, port, dbName, username, password, backupName)
+	provider = backup.NewMongoClient(host, port, dbName, username, password, backupName)
 	cmd := command
 	switch cmd {
 	case string(providers.CommandDump):
