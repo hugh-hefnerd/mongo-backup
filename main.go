@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/hugh-hefnerd/mongoBackup/backup"
-	"github.com/hugh-hefnerd/mongoBackup/providers"
+	"github.com/hugh-hefnerd/mongo-backup/backup"
+	"github.com/hugh-hefnerd/mongo-backup/providers"
 	flag "github.com/spf13/pflag"
 	"go.mongodb.org/mongo-driver/mongo"
 	"log"

@@ -1,4 +1,4 @@
-module github.com/hugh-hefnerd/mongoBackup
+module github.com/hugh-hefnerd/mongo-backup
 
 go 1.14
 
