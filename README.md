@@ -7,9 +7,9 @@ mongo-backup
 --command <backup, restore, query>
 --host <default: localhost>
 --port <default:21707>
---database <DB Name>
+--db <DB Name>
 --user <username>
---password <password>
+--pass <password>
 --backupname <dated backup name for use with restore>
 ```
 
