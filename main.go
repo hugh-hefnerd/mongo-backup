@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
+	"github.com/hugh-hefnerd/mongoBackup/mongoBackup"
+	"github.com/hugh-hefnerd/mongoBackup/providers"
 	flag "github.com/spf13/pflag"
 	"go.mongodb.org/mongo-driver/mongo"
 	"log"
-	"mongoBackup/mongoBackup"
-	"mongoBackup/providers"
 )
 
 var (
