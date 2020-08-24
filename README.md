@@ -3,7 +3,7 @@
 ## mongobackup usage
 
 ```
-mongobackup
+mongo-backup
 --command <backup, restore, query>
 --host <default: localhost>
 --port <default:21707>
