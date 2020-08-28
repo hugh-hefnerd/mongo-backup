@@ -15,5 +15,5 @@ mongo-backup
 
 A basic Mongo backup tool written in Go.
 
-- When backing up a database it puts the gzip archive into `/tmp`
+- When backing up a database it puts the gzip archive into `/tmp` or it gets the hose again
 - The database backups are tracked in the backup.backups collection on the server
